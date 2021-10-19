@@ -21,7 +21,6 @@ class Product(models.Model):
     Category = models.ForeignKey('Category', on_delete=models.CASCADE)
     korean_name = models.CharField(max_length=45)
     english_name = models.CharField(max_length=45)
-    description = models.TextField()
     Nutrition = models.ForeignKey('Nutrition', on_delete=models.CASCADE)
 
     class Meta:
